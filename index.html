@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio UX/UI Designer</title>
+    <meta
+      name="description"
+      content="Portfolio moderne et professionnel pour un designer UX/UI."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <div class="logo">Y.O</div>
+        <nav class="nav-links">
+          <a href="#about">À propos</a>
+          <a href="#projects">Projets</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a href="#contact" class="btn btn-primary">Contactez-moi</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow">UX/UI Designer</p>
+            <h1>Je conçois des expériences digitales belles, simples et utiles.</h1>
+            <p class="lead">
+              Je crée des interfaces modernes et fonctionnelles pour des projets qui
+              inspirent et convertissent.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+              <a href="#about" class="btn btn-secondary">À propos</a>
+            </div>
+
+            <div class="socials">
+              <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="#" target="_blank" rel="noreferrer">Behance</a>
+              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="profile-visual">
+              <div class="avatar">YO</div>
+            </div>
+            <div class="mini-info">
+              <span class="label">Nom</span>
+              <strong id="profile-name-display">Yassine Oulhaj</strong>
+            </div>
+            <div class="mini-info">
+              <span class="label">Email</span>
+              <strong id="profile-email-display">yassine.oulhaj@gmail.com</strong>
+            </div>
+            <div class="mini-info">
+              <span class="label">Localisation</span>
+              <strong id="profile-location-display">Rabat, Maroc</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Profil</p>
+            <h2>Designer UX/UI avec une approche centrée utilisateur</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-card">
+              <h3>À propos</h3>
+              <p id="profile-bio-display">
+                Je suis un designer UX/UI passionné par la création d’expériences
+                digitales fluides, élégantes et utiles. J’aime transformer des idées
+                complexes en interfaces claires et engageantes.
+              </p>
+            </div>
+
+            <div class="about-card details-card">
+              <h3>Informations</h3>
+              <ul class="details-list">
+                <li><span>Nom complet</span><strong id="profile-fullname-display">Yassine Oulhaj</strong></li>
+                <li><span>Email</span><strong id="profile-email-detail">yassine.oulhaj@gmail.com</strong></li>
+                <li><span>Téléphone</span><strong id="profile-phone-display">+212 6 00 00 00 00</strong></li>
+                <li><span>Date de naissance</span><strong id="profile-birth-display">01/01/2005</strong></li>
+                <li><span>Formation</span><strong id="profile-education-display">Bac 2024 — PC</strong></li>
+                <li><span>Établissement</span><strong id="profile-school-display">CMC Rabat</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="stats">
+            <div class="stat-card">
+              <strong>+2</strong>
+              <span>ans de création</span>
+            </div>
+            <div class="stat-card">
+              <strong>8+</strong>
+              <span>projets</span>
+            </div>
+            <div class="stat-card">
+              <strong>100%</strong>
+              <span>design orienté utilisateur</span>
+            </div>
+            <div class="stat-card">
+              <strong>UX + UI</strong>
+              <span>stratégie & design</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Projets</p>
+            <h2>Quelques réalisations</h2>
+          </div>
+
+          <div class="admin-panel">
+            <form id="project-form" class="project-form">
+              <h3 id="form-title">Ajouter un projet</h3>
+
+              <input type="hidden" id="project-id" />
+
+              <div class="form-grid">
+                <div>
+                  <label for="project-title">Titre</label>
+                  <input id="project-title" type="text" placeholder="Nom du projet" required />
+                </div>
+
+                <div>
+                  <label for="project-category">Catégorie</label>
+                  <input id="project-category" type="text" placeholder="UX/UI, Branding..." required />
+                </div>
+
+                <div class="full">
+                  <label for="project-image">Image (URL)</label>
+                  <input
+                    id="project-image"
+                    type="url"
+                    placeholder="https://example.com/image.jpg"
+                    required
+                  />
+                </div>
+
+                <div class="full">
+                  <label for="project-link">Lien du projet</label>
+                  <input id="project-link" type="url" placeholder="https://..." />
+                </div>
+
+                <div class="full">
+                  <label for="project-description">Description</label>
+                  <textarea
+                    id="project-description"
+                    rows="4"
+                    placeholder="Décris ton projet..."
+                    required
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Enregistrer</button>
+                <button type="button" id="cancel-edit" class="btn btn-secondary hidden">Annuler</button>
+              </div>
+            </form>
+          </div>
+
+          <div id="projects-container" class="projects-grid"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <div class="contact-box">
+            <div class="contact-text">
+              <p class="eyebrow">Contact</p>
+              <h2>Travaillons ensemble sur votre prochain projet.</h2>
+              <p>
+                Je suis disponible pour des missions UX/UI, design de produits, expériences digitales et interfaces modernes.
+              </p>
+              <div class="contact-links">
+                <a href="mailto:yassine.oulhaj@gmail.com">yassine.oulhaj@gmail.com</a>
+                <a href="tel:+212600000000">+212 6 00 00 00 00</a>
+              </div>
+            </div>
+
+            <form id="profile-form" class="profile-form">
+              <h3>Modifier mon profil</h3>
+
+              <div class="form-grid">
+                <div>
+                  <label for="fullName">Nom complet</label>
+                  <input id="fullName" type="text" />
+                </div>
+
+                <div>
+                  <label for="profession">Profession</label>
+                  <input id="profession" type="text" />
+                </div>
+
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" type="email" />
+                </div>
+
+                <div>
+                  <label for="phone">Téléphone</label>
+                  <input id="phone" type="text" />
+                </div>
+
+                <div>
+                  <label for="birthDate">Date de naissance</label>
+                  <input id="birthDate" type="date" />
+                </div>
+
+                <div>
+                  <label for="location">Ville / Pays</label>
+                  <input id="location" type="text" />
+                </div>
+
+                <div class="full">
+                  <label for="education">Formation</label>
+                  <input id="education" type="text" />
+                </div>
+
+                <div class="full">
+                  <label for="school">Établissement</label>
+                  <input id="school" type="text" />
+                </div>
+
+                <div class="full">
+                  <label for="bio">Biographie</label>
+                  <textarea id="bio" rows="4"></textarea>
+                </div>
+
+                <div class="full">
+                  <label for="linkedin">LinkedIn</label>
+                  <input id="linkedin" type="url" />
+                </div>
+
+                <div class="full">
+                  <label for="github">GitHub</label>
+                  <input id="github" type="url" />
+                </div>
+
+                <div class="full">
+                  <label for="behance">Behance</label>
+                  <input id="behance" type="url" />
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Sauvegarder le profil</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>© 2025 Yassine Oulhaj — UX/UI Designer</p>
+        <div class="footer-links">
+          <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="#" target="_blank" rel="noreferrer">Behance</a>
+          <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
